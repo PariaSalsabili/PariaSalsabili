@@ -1,0 +1,23 @@
+class Point():
+    def __init__(self , x , y):
+        self.x = x
+        self.y = y
+        
+    def distance(self, p ):
+        return math.sqrt((self.x-p.x)**2 + (self.y-p.y)**2)
+    
+    def distance_from(self):
+        return math.sqrt(self.x**2 + self.y**2)
+        
+        
+class shapes(Point):
+    def __init__(self, l, w, a, b, c, h, r, color, center):
+        self.length = l
+        self.width = w
+        self.a = a
+        self.c = c
+        self.base = b     #for the triangle
+        self.height = h
+        self.radius = r
+        self.center = center = Point(x,y)
+        self.color = color
